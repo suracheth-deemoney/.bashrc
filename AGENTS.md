@@ -14,6 +14,10 @@ This repo manages a single `.bashrc` file. `$HOME/.bashrc` is a symlink pointing
 - `$HOME/.bashrc` symlinks to `.bashrc` in this repo.
 - Do not break the symlink (e.g. by moving or renaming `.bashrc`).
 
+## Research
+
+- If you are unsure about something (e.g. recommended config snippets, tool-specific best practices), look it up on the internet before guessing.
+
 ## Making changes
 
 - Edit `.bashrc` directly.
