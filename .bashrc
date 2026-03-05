@@ -120,5 +120,7 @@ export PATH="$HOME/.local/bin:$PATH"
 . "$HOME/.cargo/env"
 
 # Auto-start zellij
-export ZELLIJ_AUTO_EXIT="true"
-eval "$(zellij setup --generate-auto-start bash)"
+if command -v zellij &>/dev/null; then
+    export ZELLIJ_AUTO_EXIT="true"
+    eval "$(zellij setup --generate-auto-start bash)"
+fi
