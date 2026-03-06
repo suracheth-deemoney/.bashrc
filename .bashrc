@@ -125,6 +125,11 @@ if command -v asdf &>/dev/null; then
     . <(asdf completion bash)
 fi
 
+# direnv
+if command -v direnv &>/dev/null; then
+    eval "$(direnv hook bash)"
+fi
+
 # Auto-start zellij
 if command -v zellij &>/dev/null; then
     export ZELLIJ_AUTO_EXIT="true"
