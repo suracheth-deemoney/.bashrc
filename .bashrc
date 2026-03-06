@@ -119,6 +119,12 @@ fi
 export PATH="$HOME/.local/bin:$PATH"
 . "$HOME/.cargo/env"
 
+# asdf version manager
+if command -v asdf &>/dev/null; then
+    export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+    . <(asdf completion bash)
+fi
+
 # Auto-start zellij
 if command -v zellij &>/dev/null; then
     export ZELLIJ_AUTO_EXIT="true"
